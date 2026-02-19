@@ -11,10 +11,10 @@ permissions:
 
 jobs:
  review:
-  uses: ojsef39/flake-review/.github/workflows/flake-review-reusable.yml@test3
+  uses: ojsef39/flake-review/.github/workflows/flake-review-reusable.yml@test
   with:
    # https://github.com/ojsef39/flake-review/blob/main/.github/workflows/flake-review-reusable.yml
    concurrency-group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
-   flake-review-ref: "test3"
+   flake-review-ref: "test"
    packages: "default"
    matrix: '[{"runner":"macos-latest","systems":"aarch64-darwin","name":"darwin"},{"runner":"ubuntu-latest","systems":"x86_64-linux","name":"linux"}]'
