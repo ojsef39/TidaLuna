@@ -10,6 +10,8 @@ stdenv.mkDerivation {
   pname = "tidaLuna-darwin";
   version = "1";
 
+  dontStrip = true;
+
   buildPhase = ''
     true
   '';
