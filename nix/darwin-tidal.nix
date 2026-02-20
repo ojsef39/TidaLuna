@@ -1,7 +1,7 @@
-{
-  prev ? { },
-  injection,
-  tidalDmg,
+{ prev ? { }
+, injection
+, tidalDmg
+,
 }:
 let
   inherit (prev) lib stdenv;

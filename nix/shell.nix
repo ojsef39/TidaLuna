@@ -1,11 +1,10 @@
-{
-  mkShellNoCC,
-  callPackage,
-
-  # packages
-  nodejs,
-  pnpm,
-  prettierd,
+{ mkShellNoCC
+, callPackage
+, # packages
+  nodejs
+, pnpm
+, prettierd
+,
 }:
 let
   defaultPackage = callPackage ./overlay.nix { };

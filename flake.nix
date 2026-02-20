@@ -34,5 +34,5 @@
 
       # Overlay (if preferred)
       overlays.default = final: _: { tidal-hifi = final.callPackage ./nix/overlay.nix { }; };
-  };
+    };
 }

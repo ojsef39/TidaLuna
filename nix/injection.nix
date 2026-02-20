@@ -1,10 +1,9 @@
-{
-  stdenv,
-  nodejs,
-
-  pnpmConfigHook,
-  fetchPnpmDeps,
-  pnpm,
+{ stdenv
+, nodejs
+, pnpmConfigHook
+, fetchPnpmDeps
+, pnpm
+,
 }:
 let
   package = builtins.fromJSON (builtins.readFile ../package.json);
